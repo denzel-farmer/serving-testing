@@ -25,7 +25,7 @@ function upload_test_images() {
   local docker_tag=$1
   local tag_option=""
   if [ -n "${docker_tag}" ]; then
-    tag_option="--tags $docker_tag,latest"
+    tag_option="--tags $docker_tag,unencrypted"
   fi
 
   # If PLATFORM environment variable is specified, then images will be built for
